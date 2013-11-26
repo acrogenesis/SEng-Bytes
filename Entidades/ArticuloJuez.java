@@ -8,9 +8,9 @@ public class ArticuloJuez {
 
   public ArticuloJuez(){
     try {
-      String userName = "root";
-      String password = "amss";
-      String url = "jdbc:mysql://162.243.146.245/SEng";
+      String userName = "bluehats_SEng";
+      String password = "amss1";
+      String url = "jdbc:mysql://162.243.134.61/bluehats_SEng";
       Class.forName ("com.mysql.jdbc.Driver").newInstance();
       conn = DriverManager.getConnection (url, userName, password);
       stmt = conn.createStatement();
