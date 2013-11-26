@@ -30,6 +30,8 @@ public class InterfazBajaJuez extends HttpServlet {
     out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />");
     out.println("<link rel=\"stylesheet\" href=\"Interfaces/css/foundation.min.css\" />");
     out.println("<script src=\"Interfaces/js/modernizr.js\"></script>");
+    out.println("<script src=\"Interfaces/js/jquery.js\"></script>");
+    out.println("<script src=\"Interfaces/js/jquery.js\"></script>");
 
     out.println("</HEAD>");
     out.println("<BODY>");
