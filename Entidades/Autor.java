@@ -53,6 +53,14 @@ public class Autor {
       stmt.executeUpdate(s);
     }catch (Exception e) { System.out.println ("Cannot update database" + e ); }
   }
+  public void crear(int usuario,int editorial){
+    try {
+      String s = "INSERT INTO Autor (idUsuario,idEditorial)"+"VALUES ("+usuario+","+editorial+")";
+      System.out.println(s);
+      stmt.executeUpdate(s);
+    } catch (SQLException e) {
+    }
+  }
   /*
   public void nominarJuez(int idJuez) {
 

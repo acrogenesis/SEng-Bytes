@@ -14,10 +14,9 @@ public class ControlBajaJuez {
   public boolean BajaJuez(int idJuez){
 
     if(juez.existe(idJuez)){
-
       juez.eliminar(idJuez);
       return true;
     }
-    else return false;
+    return false;
   }
 }

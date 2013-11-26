@@ -46,13 +46,22 @@
       <url-pattern>/CrearEdicion</url-pattern>
   </servlet-mapping>
 
-  <servlet>
+ <servlet>
     <servlet-name>BajaJuez</servlet-name>
     <servlet-class>interfaces.InterfazBajaJuez</servlet-class>
   </servlet>
   <servlet-mapping>
       <servlet-name>BajaJuez</servlet-name>
       <url-pattern>/BajaJuez</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AltaAutor</servlet-name>
+    <servlet-class>interfaces.InterfazAltaAutor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AltaAutor</servlet-name>
+      <url-pattern>/AltaAutor</url-pattern>
   </servlet-mapping>
 <!--
 <servlet>

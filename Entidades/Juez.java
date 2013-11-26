@@ -34,9 +34,9 @@ public class Juez {
 
   public void eliminar(int juez){
     try{
-      stmt.executeQuery("DELETE FROM Juez WHERE idJuez = " + juez);
-      ResultSet rs = stmt.getResultSet();
-      rs.close();
-    }catch (SQLException e) {}
+      String s = "DELETE FROM Juez WHERE idJuez = " + juez;
+      System.out.println(s);
+      stmt.executeUpdate(s);
+    }catch (Exception e) { System.out.println ("Cannot update database" + e ); }
   }
 }
