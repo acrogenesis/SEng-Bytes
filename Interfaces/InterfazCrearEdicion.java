@@ -60,9 +60,9 @@ public class InterfazCrearEdicion extends HttpServlet {
       out.println("<a href=\"#\" class=\"close\">&times;</a>");
       out.println("</div>");
     }
-    out.println("<form method=\"GET\" action=\"CrearEdicion\">");
-    out.println("<p> Edicion <input type=\"text\" name=\"edicion\" size=\"15\"></p>");
-    out.println("<p> Editorial <input type=\"text\" name=\"editorial\" size=\"15\"></p>");
+    out.println("<form data-abide method=\"GET\" action=\"CrearEdicion\">");
+    out.println("<p> Edicion <input required type=\"text\" name=\"edicion\" size=\"15\"></p>");
+    out.println("<p> Editorial <input required type=\"text\" name=\"editorial\" size=\"15\"></p>");
     out.println("<input type=\"hidden\" name=\"operacion\" value=\"validar\"/>");
     out.println("<input type=\"submit\" value=\"Enviar\"name=\"B1\" class=\"button radius success\">");
     out.println("<a href=\"index.html\" class=\"button radius\">Cancelar</a>");

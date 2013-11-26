@@ -62,8 +62,8 @@ public class InterfazBajaJuez extends HttpServlet {
       out.println("<a href=\"#\" class=\"close\">&times;</a>");
       out.println("</div>");
     }
-    out.println("<form method=\"GET\" action=\"BajaJuez\">");
-    out.println("<p> Juez <input type=\"text\" name=\"juez\" size=\"15\"></p>");
+    out.println("<form data-abide method=\"GET\" action=\"BajaJuez\">");
+    out.println("<p> Juez <input required type=\"text\" name=\"juez\" size=\"15\"></p>");
     out.println("<input type=\"hidden\" name=\"operacion\" value=\"validar\"/>");
     out.println("<input type=\"submit\" value=\"Enviar\"name=\"B1\" class=\"button radius success\">");
     out.println("<a href=\"index.html\" class=\"button radius\">Cancelar</a>");

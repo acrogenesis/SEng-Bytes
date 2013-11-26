@@ -63,9 +63,9 @@ public class InterfazPublicar extends HttpServlet {
       out.println("<a href=\"#\" class=\"close\">&times;</a>");
       out.println("</div>");
     }
-    out.println("<form method=\"GET\" action=\"Publicar\">");
-    out.println("<p> Autor <input type=\"text\" name=\"autor\" size=\"15\"></p>");
-    out.println("<p> Edicion <input type=\"text\" name=\"edicion\" size=\"15\"></p>");
+    out.println("<form data-abide method=\"GET\" action=\"Publicar\">");
+    out.println("<p> Autor <input required type=\"text\" name=\"autor\" size=\"15\"></p>");
+    out.println("<p> Edicion <input required type=\"text\" name=\"edicion\" size=\"15\"></p>");
     out.println("<input type=\"hidden\" name=\"operacion\" value=\"validar\"/>");
     out.println("<input type=\"submit\" value=\"Enviar\"name=\"B1\" class=\"button radius success\">");
     out.println("<a href=\"index.html\" class=\"button radius\">Cancelar</a>");
@@ -91,13 +91,13 @@ public class InterfazPublicar extends HttpServlet {
         out.println("<a href=\"#\" class=\"close\">&times;</a>");
         out.println("</div>");
       }
-      out.println("<form method=\"GET\" action=\"Publicar\">");
+      out.println("<form data-abide method=\"GET\" action=\"Publicar\">");
       out.println("<input type=\"hidden\" name=\"operacion\" value=\"publicando\"/>");
       out.println("<input type=\"hidden\" name=\"autor\" value=\"" + autor + "\"/>");
       out.println("<input type=\"hidden\" name=\"edicion\" value=\"" + edicion + "\"/>");
-      out.println("<p> idArticulo <input type=\"text\" name=\"articulo\" size=\"15\"></p>");
-      out.println("<p> Titulo <input type=\"text\" name=\"titulo\" size=\"15\"></p>");
-      out.println("<p> Fecha <input type=\"date\" name=\"fecha\" size=\"15\"></p>");
+      out.println("<p> idArticulo <input required type=\"text\" name=\"articulo\" size=\"15\"></p>");
+      out.println("<p> Titulo <input required type=\"text\" name=\"titulo\" size=\"15\"></p>");
+      out.println("<p> Fecha <input required type=\"date\" name=\"fecha\" size=\"15\"></p>");
       out.println("<p> Contenido </p>");
       out.println("<textarea rows=\"4\" cols=\"50\" name=\"contenido\"></textarea>");
       out.println("<input type=\"submit\" value=\"Enviar\"name=\"B1\" class=\"button radius success\">");
