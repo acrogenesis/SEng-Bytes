@@ -77,11 +77,11 @@ public class InterfazAltaJuez extends HttpServlet {
   }
 
   public void validarAlta(boolean error){
-    cj = new ControlAltaAutor();
+    cj = new ControlAltaJuez();
     //La funcion trim() elimina espacios antes y despues del valor
     int juez = Integer.parseInt(thisRequest.getParameter("juez").trim());
     int editorial = Integer.parseInt(thisRequest.getParameter("editorial").trim());
-    boolean seAlta = cj.Alta(juez, editorial);
+    boolean seAlta = cj.AltaJuez(juez, editorial);
     if (seAlta){
       out.println("<p>Juez dado de Alta</p>");
       out.println("<div data-alert class=\"alert-box radius success\">");
