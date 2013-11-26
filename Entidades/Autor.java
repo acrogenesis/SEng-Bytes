@@ -60,6 +60,17 @@ public class Autor {
       stmt.executeUpdate(s);
     } catch (SQLException e) {
     }
+
+	public void altaJuez(int usuario){
+		try {
+			String s = "UPDATE Autor SET publicar ="+false+""+
+			              "WHERE idAutor = "+usuario;
+			System.out.println(s); 
+			stmt.executeUpdate(s);
+		} catch (Exception e) {
+			
+		}
+	}
   }
   /*
   public void nominarJuez(int idJuez) {
