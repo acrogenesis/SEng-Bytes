@@ -37,7 +37,7 @@ public class InterfazVotar extends HttpServlet {
     out.println("<nav class=\"top-bar\" data-topbar>");
     out.println("<ul class=\"title-area\">");
     out.println("<li class=\"name\">");
-    out.println("<h1><a href=\"/SEng\">SEng Bytes</a></h1>");
+    out.println("<h1><a href=\"/SEng\">SEng Bytes & Bits</a></h1>");
     out.println("</li>");
     out.println("</ul>");
     out.println("</nav>");
