@@ -56,6 +56,15 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>AltaJuez</servlet-name>
+    <servlet-class>interfaces.InterfazAltaJuez</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AltaJuez</servlet-name>
+      <url-pattern>/AltaJuez</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>AltaAutor</servlet-name>
     <servlet-class>interfaces.InterfazAltaAutor</servlet-class>
   </servlet>
