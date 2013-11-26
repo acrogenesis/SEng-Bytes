@@ -28,7 +28,7 @@ public class InterfazAprobar extends HttpServlet {
     out.println("<TITLE>Aprobar Articulo</TITLE>");
     out.println("<META http-equiv=Content-Type content=\"text/html\">");
     out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />");
-    out.println("<link rel=\"stylesheet\" href=\"Interfaces/css/foundation.css\" />");
+    out.println("<link rel=\"stylesheet\" href=\"Interfaces/css/foundation.min.css\" />");
     out.println("<script src=\"Interfaces/js/modernizr.js\"></script>");
 
     out.println("</HEAD>");
